@@ -1,0 +1,162 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/images/winnie-the-pooh-background.jpg') no-repeat center center fixed;
+    background-size: cover; /* makes image cover whole screen */
+    color: #333333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.puh-img {
+    display: block;
+    /* става блок елемент */
+    margin: 0 auto;
+    /* центриране хоризонтално */
+    width: 250px;
+    /* размер на Мечо Пух до заглавието */
+}
+
+h1 {
+    text-align: center;
+    color: #e27d60;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.details {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-weight: 600;
+    color: #000000;
+    /* поправен hex код */
+}
+
+.gifts {
+    margin: 2rem 0;
+}
+
+.gift-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+
+
+.gift-item button {
+    background-color: #e27d60;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* поправено */
+}
+
+.gift-item button:hover {
+    background-color: #983e2a;
+}
+
+.gift-item button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #d66b52; /* правилен 6-символен хекс */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gift-item button.selected {
+  background-color: #00a43c;
+  color: #ffffff;
+}
+
+.gift-item button.reserved {
+  background-color: #999;
+  color: #444;
+  cursor: not-allowed;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input[type="text"] {
+    padding: 0.7rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+select,
+button.submit-btn {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+}
+
+button.submit-btn {
+    background-color: #d66b52;
+    /* поправен hex код */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* поправено */
+}
+
+button.submit-btn:hover {
+    background-color: #983e2a;
+}
+
+@media (max-width: 600px) {
+    .gift-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+
+#message-container {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#message-container.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#message-container.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
