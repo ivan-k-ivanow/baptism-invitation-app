@@ -52,7 +52,7 @@ h1 {
     color: #e27d60;
 }
 
-p { 
+p {
     width: auto;
     padding: 0px 25px;
     font-size: 1.6rem;
@@ -71,8 +71,28 @@ p {
     line-height: 1.8;
 }
 
+.details-date {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: #e27d60;
+    
+}
+
+.details-locations{
+    margin-top: 0px;
+}
+
+.details-locations b{
+    font-size: 2.5rem;
+    color: #e27d60;
+}
+
+
 .gifts {
-    margin: 2rem 0;
+    display: block;
+    margin: 2rem auto;
+    max-width: 700px;
 }
 
 .gift-item {
@@ -85,8 +105,17 @@ p {
     border-radius: 8px;
     background: #fafafa;
     font-size: 1.1rem;
+    margin: 10px auto;
 }
 
+.gifts h2 {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.gifts p {
+    margin-top: 10px;
+}
 
 
 .gift-item button {
@@ -98,7 +127,7 @@ p {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    
+
 }
 
 .gift-item button:hover {
@@ -127,11 +156,22 @@ p {
 }
 
 
-form {
+.attendence-form {
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 3rem;
+}
+
+.attendence-form h2 {
+    margin-bottom: auto;
+}
+
+.attendence-form p {
+    margin-bottom: 10px;
+    margin-top: auto;
+    font-size: 1.5rem;
 }
 
 .attendence-form input::placeholder {
@@ -174,13 +214,6 @@ button.submit-btn:hover {
     background-color: #983e2a;
 }
 
-@media (max-width: 600px) {
-    .gift-item {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-    }
-}
 
 
 #message-container {
@@ -349,5 +382,16 @@ button.submit-btn:hover {
         max-width: 100%;
         height: 350px;
         margin: 20px auto;
+    }
+
+    .attendence-form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .gift-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
     }
 }

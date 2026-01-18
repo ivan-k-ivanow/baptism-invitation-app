@@ -15,5 +15,6 @@ export const giftTemplate = (gift, toggleGift) => html`
 
 export const giftsTemplate = (gifts, toggleGift) => html`
   <h2>Примерни подаръци</h2>
+  <p>Ако все още нямате идеая какво да подарите</p>
   ${gifts.map(gift => giftTemplate(gift, toggleGift))}
 `;
