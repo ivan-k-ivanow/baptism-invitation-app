@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Great+Vibes&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .marck-script-regular {
     font-family: "Marck Script", cursive;
@@ -80,6 +81,7 @@ p {
 
 
 .gift-item button {
+    font-family: "Montserrat", sans-serif;
     background-color: #e27d60;
     color: #ffffff;
     border: none;
@@ -87,6 +89,7 @@ p {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
 .gift-item button:hover {
@@ -131,6 +134,7 @@ form {
 .attendence-form select {
     font-family: "Bad Script", cursive;
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 input[type="text"] {
@@ -149,6 +153,7 @@ button.submit-btn {
 }
 
 button.submit-btn {
+    font-family: "Montserrat", sans-serif;
     background-color: #d66b52;
     color: #ffffff;
     border: none;
