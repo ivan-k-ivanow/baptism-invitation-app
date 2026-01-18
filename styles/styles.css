@@ -38,7 +38,15 @@ body {
     width: 250px;
 }
 
+.invitation {
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #484848;
+}
+
 h1 {
+    margin-top: 5px;
     font-size: 3rem;
     text-align: center;
     color: #e27d60;
@@ -60,7 +68,7 @@ p {
     color: #000000;
     font-size: 1.3rem;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .gifts {
