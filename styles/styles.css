@@ -76,14 +76,14 @@ p {
     margin-bottom: 25px;
     font-size: 2.5rem;
     color: #e27d60;
-    
+
 }
 
-.details-locations{
+.details-locations {
     margin-top: 0px;
 }
 
-.details-locations b{
+.details-locations b {
     font-size: 2.5rem;
     color: #e27d60;
 }
@@ -166,17 +166,18 @@ p {
 
 .attendence-form h2 {
     margin-bottom: auto;
+    font-size: 1.6rem;
 }
 
 .attendence-form p {
     margin-bottom: 10px;
     margin-top: auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .attendence-form input::placeholder {
     font-family: "Bad Script", cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -370,12 +371,22 @@ button.submit-btn:hover {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0px 10px;
+    }
+
+    .details-date {
+        font-size: 2.2rem;
+
+
+    }
+
+    .details-locations b {
+        font-size: 2.2rem;
     }
 
     .google-maps {
