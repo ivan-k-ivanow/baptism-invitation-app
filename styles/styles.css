@@ -371,10 +371,9 @@ button.submit-btn:hover {
 @media (max-width: 768px) {
 
     body {
-        background-image: url('../images/winnie-the-pooh-mobile.png');
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center top;
+        background: url('../images/winnie-the-pooh-mobile.png') no-repeat center top;
+        background-size: contain;
+        background-attachment: fixed;
     }
 
 
