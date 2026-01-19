@@ -19,6 +19,10 @@ body {
     color: #333333;
 }
 
+.mobile-background {
+    display: none;
+}
+
 .container {
     max-width: 800px;
     margin: 2rem auto;
@@ -371,11 +375,23 @@ button.submit-btn:hover {
 @media (max-width: 768px) {
 
     body {
-        background: url('../images/winnie-the-pooh-mobile.png') no-repeat center top;
-        background-size: contain;
-        background-attachment: fixed;
+        background: none;
+        /* махаме desktop фона */
     }
 
+    .mobile-background {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        object-fit: contain;
+        z-index: -1;
+        pointer-events: none;
+    }
 
     h1 {
         font-size: 2.2rem;
