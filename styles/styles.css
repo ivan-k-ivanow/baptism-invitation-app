@@ -23,7 +23,7 @@ body {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background: #ffffffd7;
+    background: #ffffffb7;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
@@ -370,6 +370,12 @@ button.submit-btn:hover {
 
 @media (max-width: 768px) {
 
+    body {
+        background: url('../images/winnie-the-pooh-mobile.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+
     h1 {
         font-size: 2.2rem;
     }
@@ -381,7 +387,6 @@ button.submit-btn:hover {
 
     .details-date {
         font-size: 2.2rem;
-
 
     }
 
