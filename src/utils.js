@@ -6,5 +6,5 @@ export function showMessage(text, type = "success") {
     setTimeout(() => {
         container.textContent = "";
         container.className = "";
-    }, 6000);
+    }, 10000);
 }

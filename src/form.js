@@ -26,14 +26,16 @@ export function attendenceFormSubmit() {
         const attendance = form.querySelector("select").value;
         await addGuestToDB(guestData, attendance);
 
-        const selectedGifts = gifts.filter(g => g.selected);
-        for (const gift of selectedGifts) {
-            await reserveGiftInDB(gift, guestData.name);
-            gift.reserved = true;
-            gift.selected = false;
-        }
+            //Updates Gifts database
 
-        render(giftsTemplate(gifts, toggleGift), document.querySelector("#gifts-container"));
+            // const selectedGifts = gifts.filter(g => g.selected);
+            // for (const gift of selectedGifts) {
+            //     await reserveGiftInDB(gift, guestData.name);
+            //     gift.reserved = true;
+            //     gift.selected = false;
+            // }
+
+            // render(giftsTemplate(gifts, toggleGift), document.querySelector("#gifts-container"));
         showMessage("Благодарим за потвърждението! 🎉");
     });
 }
