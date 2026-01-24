@@ -19,14 +19,14 @@ export function attendenceFormSubmit() {
 
         const guestData = getGuestData();
         if (!guestData.name) {
-            showMessage("Моля, въведете името си.", "error");
+            showMessage("Моля, въведете името си!", "error");
             return;
         }
 
         const attendance = form.querySelector("select").value;
         await addGuestToDB(guestData, attendance);
 
-            //Updates Gifts database
+            //Updates Gifts 
 
             // const selectedGifts = gifts.filter(g => g.selected);
             // for (const gift of selectedGifts) {
@@ -36,6 +36,6 @@ export function attendenceFormSubmit() {
             // }
 
             // render(giftsTemplate(gifts, toggleGift), document.querySelector("#gifts-container"));
-        showMessage("Благодарим за потвърждението! 🎉");
+        showMessage("Благодарим за потвърждението и че ще споделите този специален ден с нас! 🎉");
     });
 }
