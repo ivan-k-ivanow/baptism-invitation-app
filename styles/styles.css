@@ -376,7 +376,7 @@ button.submit-btn:hover {
     border: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     body {
         background: none;
@@ -434,10 +434,10 @@ button.submit-btn:hover {
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
      body {
-        background: url('../images/winnie-the-pooh-background.jpg');
+        background: url('../images/winnie-the-pooh-background.jpg') no-repeat center center fixed;
         display: block;
     }
 }
