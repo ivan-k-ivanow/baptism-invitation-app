@@ -432,3 +432,12 @@ button.submit-btn:hover {
         gap: 0.5rem;
     }
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+     body {
+        background: url('../images/winnie-the-pooh-background.jpg');
+        display: block;
+    }
+}
