@@ -19,7 +19,7 @@ export function attendenceFormSubmit() {
 
         const guestData = getGuestData();
         if (!guestData.name) {
-            showMessage("Моля, въведете името си!", "error");
+            showMessage("Моля, въведете името/имената си!", "error");
             return;
         }
 
